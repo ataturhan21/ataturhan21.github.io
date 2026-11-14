@@ -57,6 +57,6 @@ Before merging to `main`, run tests and a production build and inspect the page 
 
 [deploy-pages.yml](.github/workflows/deploy-pages.yml) runs lint and tests on every push to `main`, then builds the app and publishes `build/` to GitHub Pages; a failing check stops the deploy. It can also be run manually from the Actions tab. The repository's Pages source must be **GitHub Actions** (Settings → Pages). [vite.config.js](vite.config.js) sets `base: './'`, so the build uses relative asset paths and works at any URL. It also adds a Content-Security-Policy meta tag to the built page that allows only the site's own files (GitHub Pages can't send security headers); a new third-party script, font or image must be added to that policy, or the browser blocks it. [public/ata-turhan.github.io/index.html](public/ata-turhan.github.io/index.html) redirects the old address to the root.
 
-## License
+## Copyright
 
-[MIT](LICENSE).
+© Ata Turhan. All rights reserved. This repository has no open-source license: its code may not be copied, modified or redistributed.
